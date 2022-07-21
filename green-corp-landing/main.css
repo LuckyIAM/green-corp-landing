@@ -8,6 +8,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: sticky;
+    background-color: #fff;
+    top:0px;
+    z-index: 1;
 }
 .header__logo{
     height: 30px;
@@ -45,10 +49,15 @@ button{
 }
 .about__image{
     width: 500px;
+    
 }
 .about__sun-images{
     width: 100px;
     height: 100px;
+    animation: rotation 10s infinite linear;
+    position: absolute;
+    left: 50%;
+    top: 15%;
 }
 .about h1{
     font-size: 70px;
@@ -151,8 +160,6 @@ footer{
 }
 .footer__group{
     padding-right: 80px;
-}
-.footer__group h3{
     font-size: 16px;
     opacity: 0.7;
 }
@@ -162,4 +169,12 @@ footer{
 }
 .footer__links a{
     margin-bottom: 15px;
+}
+@keyframes rotation {
+    0%{
+        transform: rotate(0px);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
