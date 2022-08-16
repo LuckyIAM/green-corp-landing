@@ -270,12 +270,65 @@ footer{
 .features__rate-box{
     padding: 15px 40px 12px 40px;
 }
-.promo .promo__image{
-    background-image: url("img/promo.jpg");
+.promo__image{
+    background-image: url("../img/promo.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 25%;
+    background-size: cover; 
+    flex-shrink: 0;
 }
-.promo .promo__image{
-    width: 50vw;
-    height: 100%;
+.promo__left{
+    width: 50%;
+    height: 500px;
+    
+}
+.promo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.promo__right{
+    background-color:  #dd5f26;
+    position: relative;
+    width: 50%;
+    height: 500px;
+    box-sizing: border-box;
+    padding: 160px 60px;
+}
+.promo__right_card{
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 25px;
+}
+.promo__right_card h2+p{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+}
+.promo__right_card p{
+    opacity: 0.8;
+}
+.fa-circle{
+    font-size: 10px;
+    color: #ec6b29;
+    margin-right: 10px;
+}
+.promo__right button{
+    background: #107b1c;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.promo__right_card button{
+    position: relative;
+    top: 0px;
+    left: 38%;
+}
+.promo__right i{
+    font-size: 15px;
+    margin-left: 5px;
 }
