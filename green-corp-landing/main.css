@@ -271,7 +271,7 @@ footer{
     padding: 15px 40px 12px 40px;
 }
 .promo__image{
-    background-image: url("../img/promo.jpg");
+    background-image: url("./img/promo.jpg");
     background-repeat: no-repeat;
     background-position: 25%;
     background-size: cover; 
