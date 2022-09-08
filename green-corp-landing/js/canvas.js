@@ -52,7 +52,7 @@ class Bubble {
     canvasSize(){
         this.width = this.canvas.offsetWidth * this.dpr;
         this.height = this.canvas.offsetHeight * this.dpr;
-        this.ctx.scale(this.width, this.height)
+        this.ctx.scale(this.dpr,this.dpr)
     }
     generateBubbles(){
         this.bubblesList= [];
