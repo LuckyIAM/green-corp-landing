@@ -1,4 +1,3 @@
-const canvas = document.getElementById('orb-canvas');
 const COLORS = ["255,108,80", "5,117,18", "29,39,57", "67,189,81"];
 let BUBBLE_DENSITY = 100;
 
@@ -18,9 +17,9 @@ class Bubble {
     }
   
     init() {
-        this.color = `${COLORS[Math.floor(Math.random() * 2)]}`;
+        this.color = COLORS[generateDecimalBetween(0,2)];
         this.size = generateDecimalBetween(1, 3);
-        this.alpha = (generateDecimalBetween(5, 10)) / 10;
+        this.alpha =(generateDecimalBetween(5, 10)) / 10;
         this.translateX = generateDecimalBetween(0,this.canvasWidth);
         this.translateY = generateDecimalBetween(0, this.canvasHeight);
         this.velocity = generateDecimalBetween(20, 40);
@@ -71,10 +70,9 @@ class Bubble {
             this.ctx.arc(0,0, bubble.size, 0, 2 * Math.Pi);
             this.ctx.fillStyle =`rgba(${bubble.color}, ${bubble.alpha})`;
             this.ctx.fill();
-            this.ctx.setTransform(this.dpr, 0, 0, 0, 0, this.dpr);
-            requestAnimationFrame(this.animate.bind(this));
+            this.ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
         })
-        
+        requestAnimationFrame(this.animate.bind(this));
     }
   }
   let b = new CanvasBackground("orb-canvas");
