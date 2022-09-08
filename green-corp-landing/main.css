@@ -38,6 +38,7 @@ button{
     padding: 15px;
 }
 .about{
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -331,4 +332,10 @@ footer{
 .promo__right i{
     font-size: 15px;
     margin-left: 5px;
+}
+.orb-canvas{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
 }
