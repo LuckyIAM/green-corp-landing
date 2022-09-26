@@ -234,6 +234,15 @@
 }
 
 @media (max-width: 320px){
+    body{
+        position: absolute;
+        display: flex;
+        flex-direction: column;      
+    }
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .header__logo{
         height: 20px;
     }
