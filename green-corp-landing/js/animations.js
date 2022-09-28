@@ -60,3 +60,20 @@ function updateScroll() {
   }
 }
 window.addEventListener('scroll', updateScroll)
+
+//плавный скрулл scrollIntoView
+function addSmoothScroll(anchor) {
+  anchor.addEventListener('click', function onLinkClick(event) {
+    event.preventDefault();
+    document.querySelector(event.target.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+}
+
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  addSmoothScroll(a)
+})
+
+addSmoothScroll(document.querySelector('.more-button'));

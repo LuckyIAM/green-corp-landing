@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="media.css">
-    <link rel="stylesheet" href="fa/css/all.min.css">
+    <!-- <link rel="stylesheet" href="fa/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -18,7 +19,7 @@
     <header>
         <img class="header__logo" src="img/logo.svg">
         <div class="header__controls">
-            <a href="#contacts">Контакты</a>
+            <a href="#form">Контакты</a>
             <button>Заказать</button>
 
         </div>
@@ -28,7 +29,7 @@
         <div class="about__info animate__animated animate__fadeInLeft animate__slow">
             <h1>Солнечные панели GreenRobotic</h1>
             <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-            <button class="btn">Узнать подробнее <i class="fa-solid fa-angle-right"></i></button>
+            <button class="btn more-button" href="#features">Узнать подробнее <i class="fas fa-angle-right"></i></button>
         </div>
         <div class="about__images animate__animated animate__fadeInRight animate__slow">
             <img class="about__sun-images" src="img/sun.png">
@@ -36,7 +37,7 @@
         </div>
         
     </section>
-    <section class="features">
+    <section class="features" id="features">
         <div class="cards">
             <div class="card card__1">
                 <div class="card__logo">
@@ -96,7 +97,7 @@
             </div>
         </div>
     </section>
-    <section class="form">
+    <section class="form" id="form">
         <div class="form__container">
             <h1>Оставьте свои контакты</h1>
             <p>Поможем подобрать модель.<br>Выбрать удобный вариант доставки и установки.<br>Гарантия возврата денег.</p>
